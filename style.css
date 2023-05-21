@@ -23,3 +23,11 @@
 .bell-color {
     color: rgb(255,143,0);
 }
+
+#big-plus {
+    font-size: 30px;
+}
+
+.badge-color {
+    background-color: rgb(22,91,186);
+}
