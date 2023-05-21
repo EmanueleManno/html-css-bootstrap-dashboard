@@ -1,0 +1,11 @@
+#student-section {
+    background-color: rgb(27,114,232);
+}
+
+#sidebar {
+    background-image: url(./img/sidebar-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 100px);
+    background-color: rgb(5,30,52);
+}

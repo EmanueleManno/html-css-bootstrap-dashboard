@@ -25,13 +25,14 @@
     <header>
 
         <!--Contenitore dell'Header-->
-        <div class="container border">
+        <div class="container border" id="main-header">
 
             <div class="row">
 
                 <!--Prima colonna con il logo-->
               <div class="col-sm-2 col-lg-1 border">
-                Logo
+                <img class="img-fluid" src="./img/mobile-logo.png" alt="logo">
+                <img class="img-fluid" src="./img/logo.svg" alt="logo">
               </div>
 
               <!--Colonna con la scritta Boolean-->
@@ -62,16 +63,30 @@
             <div class="row">
 
                 <!--Sidebar-->
-                <div class="col-sm-1 col-lg-2 border">
-                 Sidebar
+                <div class="col-sm-1 col-lg-2 d-flex justify-content-between flex-column text-white text-center align-items-center h-100 fs-3 py-4" id="sidebar">
+                    
+                    <!--Parte alta della Sidebar-->
+                    <nav class="navbar-top">
+                        <ul class="list-unstyled">
+                            <li><i class="fa-solid fa-house"></i><span class="d-sm-none d-lg-inline ps-2 fs-5">Home</span></li>
+                            <li><i class="fa-solid fa-chart-simple"></i><span class="d-sm-none d-lg-inline ps-2 fs-5">Stats</span></li>
+                            <li><i class="fa-solid fa-signal"></i><span class="d-sm-none d-lg-inline ps-2 fs-5">Signal</span></li>
+                        </ul>
+                    </nav>
+
+                    <!--Parte bassa della Sidebar-->
+                    <nav class="navbar-bottom">
+                        <i class="fa-solid fa-gear"></i><span class="d-sm-none d-lg-inline ps-2 fs-5">Admin</span>
+                    </nav>
+                    
                 </div>
 
                 <!--Resto del contenuto-->
-                <div class="col-sm-11 col-lg-10 border">
+                <div class="col-sm-10 col-lg-9 border">
                  Resto del contenuto
 
                     <!--Sezione blu dedicata agli studenti sotto l'header-->
-                    <div class="container border">
+                    <div class="container text-white border" id="student-section">
                         <div class="row">
                             <div class="col-sm-12 col-md-4 col-lg-3 order-md-3 border">Nuovo Studente</div>
                             <div class="col-sm-12 col-md-4 col-lg-6 order-md-1 border">Boolean</div>
