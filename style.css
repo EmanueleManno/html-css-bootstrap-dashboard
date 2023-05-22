@@ -1,19 +1,7 @@
+/*HEADER*/
 #main-header {
     height: 60px;
     background-color: white;
-}
-
-#student-section {
-    background-color: rgb(27,114,232);
-}
-
-#sidebar {
-    background-image: url(./img/sidebar-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(5,30,52);
-
-    flex: 0 0 70px;
 }
 
 #main-search-bar {
@@ -25,8 +13,9 @@
     color: rgb(255,143,0);
 }
 
-#big-plus {
-    font-size: 30px;
+/*MAIN*/
+main {
+    height: calc(100vh - 60px);
 }
 
 .badge-color {
@@ -38,11 +27,29 @@
     max-height: 25px;
 }
 
-main {
-    height: calc(100vh - 60px);
+.small-size {
+    font-size: 13px;
 }
 
-/*Hover Sidebar*/
+/*SIDEBAR*/
+#sidebar {
+    background-image: url(./img/sidebar-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(5,30,52);
+    flex: 0 0 150px;
+}
+
+/*SEZIONE BLU SOTTO L'HEADER*/
+#student-section {
+    background-color: rgb(27,114,232);
+}
+
+#big-plus {
+    font-size: 30px;
+}
+
+/*HOVER SIDEBAR*/
 .navbar-top li {
     cursor: pointer;
 }
@@ -57,24 +64,5 @@ main {
 
 .navbar-bottom:hover {
     background-color: grey;
-}
-
-/*Faq Active*/
-.faq-active-style {
-    cursor: pointer;
-}
-
-.faq-active-display {
-    display: none;
-}
-
-.faq-active-style:active{
-    color: blue;
-    border: 2px solid blue;
-    background-color: lightcyan;
-}
-
-.faq-active-style:active .faq-active-display{
-    display: block;
 }
 
