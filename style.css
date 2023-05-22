@@ -66,3 +66,7 @@ main {
     background-color: grey;
 }
 
+/*HOVER PROSSIME CLASSI*/
+.table-hover tr:hover:not(.no-hover) {
+    background-color: lightgray;
+}
