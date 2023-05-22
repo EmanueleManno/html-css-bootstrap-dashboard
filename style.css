@@ -11,8 +11,9 @@
     background-image: url(./img/sidebar-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 60px);
     background-color: rgb(5,30,52);
+
+    flex: 0 0 70px;
 }
 
 #main-search-bar {
@@ -37,9 +38,8 @@
     max-height: 25px;
 }
 
-#main-container {
-    margin-top: 60px;
-    min-height: calc(100vh - 60px);
+main {
+    height: calc(100vh - 60px);
 }
 
 /*Hover Sidebar*/
@@ -77,3 +77,4 @@
 .faq-active-style:active .faq-active-display{
     display: block;
 }
+

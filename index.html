@@ -22,17 +22,15 @@
 <body>
 
     <!--Intestazione della pagina-->
-    <header>
+    <header class="container-fluid" id="main-header">
 
-        <!--Contenitore dell'Header-->
-        <div class="container fixed-top" id="main-header">
 
             <div class="row">
 
                 <!--Prima colonna con il logo-->
-              <div class="col-sm-2 text-center">
-                <img class="img-fluid d-sm-inline-block d-lg-none logo" src="./img/mobile-logo.png" alt="logo">
-                <img class="img-fluid d-sm-none d-lg-inline-block" src="./img/logo.svg" alt="logo Boolean">
+              <div class="col-sm-2 text-center d-flex align-items-center">
+                <img class=" d-sm-inline-block d-lg-none logo" src="./img/mobile-logo.png" alt="logo" height="40px">
+                <img class="d-sm-none d-lg-inline-block" src="./img/logo.svg" alt="logo Boolean" height="40px">
               </div>
 
               <!--Barra di ricerca-->
@@ -48,9 +46,9 @@
               </div>
 
               <!--Icone-->
-              <div class="col-sm-1 col-lg-2 text-center d-flex align-items-center">
-                <nav>
-                    <ul class="list-unstyled px-1">
+              <div class="col-sm-1 col-lg-2 text-center ">
+                <nav class="h-100 d-flex align-items-center">
+                    <ul class="list-unstyled px-1 mb-0">
                         <li class="d-sm-none d-lg-inline px-1"><i class="fa-solid fa-list"></i></li>
                         <li class="d-sm-none d-lg-inline px-1"><i class="fa-solid fa-circle-question"></i></li>
                         <li class="d-sm-none d-lg-inline px-1"><i class="fa-solid fa-ellipsis-vertical"></i></li>
@@ -68,20 +66,16 @@
                 </nav>
               </div>
 
-            </div>
           </div>
     </header>
 
     <!--Corpo principale della pagina-->
-    <main>
-
+    <main class="d-flex" >
         <!--Contenitore del main-->
-        <div class="container border" id="main-container">
 
-            <div class="row">
 
                 <!--Sidebar-->
-                <div class="col-sm-1 col-lg-2 d-flex justify-content-between flex-column text-white text-center h-100 fs-3 py-4" id="sidebar">
+                <div class="d-flex justify-content-between flex-column text-white text-center fs-3 py-4" id="sidebar">
                     
                     <!--Parte alta della Sidebar-->
                     <nav class="navbar-top">
@@ -100,10 +94,10 @@
                 </div>
 
                 <!--Resto del contenuto-->
-                <div class="col-sm-11 col-lg-10 p-0 main-content">
+                <div class="flex-grow-1 overflow-auto">
 
                     <!--Sezione blu dedicata agli studenti sotto l'header-->
-                    <div class="text-white" id="student-section">
+                    <div class="text-white container-fluid" id="student-section">
 
                         <div class="row py-3 px-4">
 
@@ -364,9 +358,7 @@
 
                     </div>
 
-                </div>
 
-            </div>
     </main>
 </body>
 </html>
