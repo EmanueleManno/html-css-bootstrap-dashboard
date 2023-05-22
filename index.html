@@ -25,18 +25,18 @@
     <header>
 
         <!--Contenitore dell'Header-->
-        <div class="container border" id="main-header">
+        <div class="container fixed-top" id="main-header">
 
             <div class="row">
 
                 <!--Prima colonna con il logo-->
-              <div class="col-sm-2 text-center border">
-                <img class="img-fluid d-sm-inline-block d-lg-none h-100" src="./img/mobile-logo.png" alt="logo">
-                <img class="img-fluid d-sm-none d-lg-inline-block h-100" src="./img/logo.svg" alt="logo Boolean">
+              <div class="col-sm-2 text-center">
+                <img class="img-fluid d-sm-inline-block d-lg-none" src="./img/mobile-logo.png" alt="logo">
+                <img class="img-fluid d-sm-none d-lg-inline-block" src="./img/logo.svg" alt="logo Boolean">
               </div>
 
               <!--Barra di ricerca-->
-              <div class="col-sm-9 col-lg-8 border">
+              <div class="col-sm-9 col-lg-8">
                 <nav class="navbar bg-body-tertiary">
                     <form class="container-fluid">
                       <div class="input-group">
@@ -48,13 +48,22 @@
               </div>
 
               <!--Icone-->
-              <div class="col-sm-1 col-lg-2 border text-center d-flex align-items-center">
+              <div class="col-sm-1 col-lg-2 text-center d-flex align-items-center">
                 <nav>
                     <ul class="list-unstyled px-1">
                         <li class="d-sm-none d-lg-inline px-1"><i class="fa-solid fa-list"></i></li>
                         <li class="d-sm-none d-lg-inline px-1"><i class="fa-solid fa-circle-question"></i></li>
                         <li class="d-sm-none d-lg-inline px-1"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                        <li class="bell-color d-sm-inline px-1"><i class="fa-solid fa-bell"></i></li>
+                        <li class="d-sm-inline px-1 dropdown">
+                            <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bell-color fa-solid fa-bell"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Profilo</a>
+                              <a class="dropdown-item" href="#">Fatturazione</a>
+                              <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
               </div>
@@ -67,12 +76,12 @@
     <main>
 
         <!--Contenitore del main-->
-        <div class="container border">
+        <div class="container border" id="main-container">
 
             <div class="row">
 
                 <!--Sidebar-->
-                <div class="col-sm-1 col-lg-2 d-flex justify-content-between flex-column text-white text-center align-items-center h-100 fs-3 py-4" id="sidebar">
+                <div class="col-sm-1 col-lg-2 d-flex justify-content-between flex-column text-white text-center h-100 fs-3 py-4" id="sidebar">
                     
                     <!--Parte alta della Sidebar-->
                     <nav class="navbar-top">
@@ -91,7 +100,7 @@
                 </div>
 
                 <!--Resto del contenuto-->
-                <div class="col-sm-11 col-lg-10 p-0">
+                <div class="col-sm-11 col-lg-10 p-0 main-content">
 
                     <!--Sezione blu dedicata agli studenti sotto l'header-->
                     <div class="text-white" id="student-section">
@@ -243,9 +252,12 @@
 
                                               <!--Corpo della tabella-->
                                               <tbody>  
-                                                <tr>
+                                                <tr class="faq-active-style">
                                                     <td>Come aggiungere un nuovo studente?</td>
                                                     <td><i class="fa-solid fa-chevron-down"></i></td>
+                                                </tr>
+                                                <tr class="faq-active-display">
+                                                    <td>Clicca sul + in alto nella sezione blu</td>
                                                 </tr>
 
                                                 <tr>

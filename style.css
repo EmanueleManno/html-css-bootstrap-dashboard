@@ -1,6 +1,6 @@
 #main-header {
-    max-height: 60px;
-    position: sticky;
+    height: 60px;
+    background-color: white;
 }
 
 #student-section {
@@ -35,4 +35,45 @@
 .avatar-img {
     max-width: 25px;
     max-height: 25px;
+}
+
+#main-container {
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
+}
+
+/*Hover Sidebar*/
+.navbar-top li {
+    cursor: pointer;
+}
+
+.navbar-bottom > * {
+    cursor: pointer;
+}
+
+.navbar-top li:hover {
+    background-color: grey;
+}
+
+.navbar-bottom:hover {
+    background-color: grey;
+}
+
+/*Faq Active*/
+.faq-active-style {
+    cursor: pointer;
+}
+
+.faq-active-display {
+    display: none;
+}
+
+.faq-active-style:active{
+    color: blue;
+    border: 2px solid blue;
+    background-color: lightcyan;
+}
+
+.faq-active-style:active .faq-active-display{
+    display: block;
 }
