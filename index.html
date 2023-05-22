@@ -101,7 +101,68 @@
                 <div class="row py-3 px-4">
 
                     <!--Colonna Nuovo Studente-->
-                    <div class="col-sm-12 col-md-4 col-lg-2 order-md-3 p-2">Nuovo Studente <i class="ps-2 fa-regular fa-square-plus" id="big-plus"></i></div>
+                    <div class="col-sm-12 col-md-4 col-lg-2 order-md-3 p-2">Nuovo Studente
+                        <li class="d-sm-inline px-1 dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ps-2 fa-regular text-white fa-square-plus" id="big-plus"></i>
+                            </button>
+                            <ul class="dropdown-menu p-3">
+                                <form>
+                                    <strong>Inserisci un nuovo studente</strong>
+                                    <div class="row">
+                                        <div class="col">
+                                          Nome
+                                          <input type="text" class="form-control" placeholder="Inserisci Nome" aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                          Cognome
+                                          <input type="text" class="form-control" placeholder="Inserisci Cognome" aria-label="Last name">
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col">
+                                          Email
+                                          <input type="text" class="form-control" placeholder="Inserisci Email" aria-label="email">
+                                        </div>
+                                        <div class="col">
+                                          Password
+                                          <input type="text" class="form-control" placeholder="Inserisci Password" aria-label="password">
+                                        </div>
+                                      </div>
+                                      <span class="col-4">
+                                        <label for="inputCity" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                      </span>
+                                      <span class="col-2">
+                                        <label for="inputState" class="form-label">Stato</label>
+                                        <select id="inputState" class="form-select">
+                                          <option selected>Scegli</option>
+                                          <option>...</option>
+                                        </select>
+                                    </span>
+                                      <div class="col-2">
+                                        <label for="inputZip" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                      </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      <div id="emailHelp" class="form-text"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Indirizzo</label>
+                                      <input type="address" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                    <button type="submit" class="btn btn-warning">Svuota</button>
+                                  </form>
+                            </ul>
+                        </li>
+                    </div>
                             
                     <!--Colonna Boolean-->
                     <div class="col-sm-12 col-md-4 col-lg-6 order-md-1 p-2">

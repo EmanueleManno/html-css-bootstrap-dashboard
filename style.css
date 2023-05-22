@@ -70,3 +70,9 @@ main {
 .table-hover tr:hover:not(.no-hover) {
     background-color: lightgray;
 }
+
+/*DROPDOWN MENU*/
+.dropdown-menu {
+    --bs-dropdown-min-width: 70rem;
+    --bs-dropdown-min-height: 70rem;
+}
